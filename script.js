@@ -33,8 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- MODAL UTILITIES ---
   const flightBtn = document.getElementById("flightBtn");
   const opryBtn = document.getElementById("opryBtn");
+  const blueBtn = document.getElementById("blueBtn");
   const flightModal = document.getElementById("flight-modal");
   const opryModal = document.getElementById("opry-modal");
+  const blueModal = document.getElementById("blue-modal");
 
   // Open functions
   if (flightBtn && flightModal) {
@@ -42,6 +44,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (opryBtn && opryModal) {
     opryBtn.addEventListener("click", () => openModal(opryModal));
+  }
+  if (blueBtn && blueModal) {
+    blueBtn.addEventListener("click", () => openModal(blueModal));
   }
 
   // Handle internal close clicks via elements containing data attributes
